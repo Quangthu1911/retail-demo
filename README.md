@@ -7,6 +7,12 @@
 - Using Go 1.19
 - Mongodb cloud
 
+### Database
+- Product: product of store
+- Branch: infor about name, address, list of requestId inventory
+- Inventory: infor about name, list of product
+- Invoice: infor about invoice after sell product
+
 ### Project structure
 - Workflow: Request => transport => business => storage => Database
 
