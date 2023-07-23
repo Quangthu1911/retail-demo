@@ -1,6 +1,7 @@
 package transport
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"go.mongodb.org/mongo-driver/mongo"
 	"net/http"
@@ -9,6 +10,8 @@ import (
 )
 
 func HandleGetInfo(db *mongo.Database) gin.HandlerFunc {
+	fmt.Println("Test revert commit")
+	fmt.Println("Test revert commit 1")
 	return func(ctx *gin.Context) {
 		storage := retailStorage.NewMongoDbStorage(db)
 		biz := retailbiz.GetInfoBiz(storage)
